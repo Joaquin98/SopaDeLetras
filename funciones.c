@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+
+// mayusculas : Char * -> None
+// Toma una palabra y cambia todas sus letras a 
+// Mayusculas.
+
+void mayusculas(char *palabra){
+    int longPalabra = strlen(palabra);
+    for(int i=0; i<longPalabra; i++) palabra[i] = toupper(palabra[i]);
+}
+
 
 // estaEnEstaDireccion : Int, Int, Int, Char *, Char **, Int, Int -> Int
 // Toma la segunda posicion de una palabra y la direccion, y se fija si
@@ -118,6 +129,7 @@ char ** ingresoTabla(int nFilas, int nColumnas, int op){
         *(tabla+i) = malloc(sizeof(char)*(nColumnas+1));
         if(op==1) printf("Ingrese la fila %d de la tabla: ",i+1);
         scanf("%s",tabla[i]);
+        mayusculas(tabla[i]);
     }
 
     system("clear");
@@ -141,6 +153,7 @@ char ** ingresoUniverso(int tUniverso, int op){
         *(Universo+i) = malloc(sizeof(char) * largoMaximo);
         if(op==1) printf("\nIngrese la %d palabra del Universo: ",i+1);
         scanf("%s",Universo[i]);
+        mayusculas(Universo[i]);
 
     }
 
