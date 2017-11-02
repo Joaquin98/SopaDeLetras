@@ -21,7 +21,8 @@ int main()
     
 
     printf("\nPalabra:\tDireccion:\n");
-    for(int i = 0 ; i < tamanioUniverso ; i++)mostrarOrientacionPalabra(Universo[i],dirPalabra(Universo[i],numeroFilas,numeroColumnas,tabla));
+    for(int i = 0 ; i < tamanioUniverso ; i++)
+	mostrarOrientacionPalabra(Universo[i],dirPalabra(Universo[i],numeroFilas,numeroColumnas,tabla));
 
 
     return 0;
