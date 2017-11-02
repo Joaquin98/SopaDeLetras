@@ -40,9 +40,9 @@ int estaEnEstaDireccion(int lPalabra, int i, int j, char *palabra, char **tabla,
 
 int entraEnEstaDireccion(int posFinalFilas, int posFinalColumnas, int numeroFilas, int numeroColumnas){
 
-    if(posFinalFilas > numeroFilas  || posFinalFilas < 0)
+    if(posFinalFilas >= numeroFilas  || posFinalFilas < 0)
         return 0;
-    if(posFinalColumnas > numeroColumnas  || posFinalColumnas < 0)
+    if(posFinalColumnas >= numeroColumnas  || posFinalColumnas < 0)
         return 0;
 
     return 1;
