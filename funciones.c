@@ -104,7 +104,8 @@ void mostrarOrientacionPalabra(char *palabra, int dir){
                                     "Vertical -> arriba-abajo",
                                     "Diagonal -> abajo-derecha"  };
 
-    printf("\nPalabra %s :\n",palabra);
+
+    printf("%s\t\t",palabra);
 
     if(dir == -1){
         printf("No se encuentra en la tabla.\n");

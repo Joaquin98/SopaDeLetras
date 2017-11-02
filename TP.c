@@ -18,10 +18,10 @@ int main()
     Universo = ingresoUniverso(tamanioUniverso,op);
 
     tabla = ingresoTabla(numeroFilas,numeroColumnas,op);
+    
 
-
-    for(int i = 0 ; i < tamanioUniverso ; i++)
-        mostrarOrientacionPalabra(Universo[i],dirPalabra(Universo[i],numeroFilas,numeroColumnas,tabla));
+    printf("\nPalabra:\tDireccion:\n");
+    for(int i = 0 ; i < tamanioUniverso ; i++)mostrarOrientacionPalabra(Universo[i],dirPalabra(Universo[i],numeroFilas,numeroColumnas,tabla));
 
 
     return 0;
